@@ -13,7 +13,7 @@ class TestRegularExpression < Test::Unit::TestCase
   end
 
   def test_or
-    assert_equal(@exp1.or(@exp2), "ab|b")
+    assert_equal("ab|b", @exp1.or("b"))
   end
 
 end
