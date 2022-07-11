@@ -14,4 +14,8 @@ class RegularExpression
   def or(other)
     @expression = @expression + ("|") + (other)
   end
+
+  def union(other)
+    @expression = @expression + (other)
+  end
 end
