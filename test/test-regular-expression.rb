@@ -11,5 +11,9 @@ class TestRegularExpression < Test::Unit::TestCase
   def test_simple
     assert_not_nil(@exp1)
   end
-  
+
+  def test_or
+    assert_equal(@exp1.or(@exp2), "ab|b")
+  end
+
 end
