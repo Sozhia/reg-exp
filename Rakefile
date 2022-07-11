@@ -1,4 +1,8 @@
-# frozen_string_literal: true
+task :default => :to
 
-require "bundler/gem_tasks"
-task default: %i[]
+desc "Pruebas unitarias de la clase reg_exp"
+task :to do
+  sh "ruby -I. test/test-regular-expression.rb"
+end
+
+
