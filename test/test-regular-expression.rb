@@ -16,4 +16,8 @@ class TestRegularExpression < Test::Unit::TestCase
     assert_equal("ab|b", @exp1.or("b"))
   end
 
+  def test_union
+    assert_equal("abb", @exp1.union("b"))
+  end
+
 end
