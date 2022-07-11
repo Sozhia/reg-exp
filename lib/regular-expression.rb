@@ -7,7 +7,11 @@ class RegularExpression
     @expression
   end
 
-  def or(expression)
-    return RegularExpression.new(@expression.concat("|").concat(expression.expression))
+  def to_s()
+    puts @expression
+  end
+
+  def or(other)
+    @expression = @expression + ("|") + (other)
   end
 end
